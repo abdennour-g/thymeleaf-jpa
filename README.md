@@ -1,1 +1,1 @@
-this application is a simple example of the spring-boot context for the purpose of linking a thymeleaf framework form on the front side with a controller on the back side using the spring annotations: @conttroller, @ postMapping, don't forget to create a myData database in mysql sqbd
+this application is a simple example of the spring-boot context for the purpose of linking a thymeleaf framework form on the front side with a controller on the back side using jpa and the spring annotations: @conttroller, @ postMapping, don't forget to create a myData database in mysql sqbd
