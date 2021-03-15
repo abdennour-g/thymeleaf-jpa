@@ -1,0 +1,20 @@
+<table class="table table-striped">
+    <caption></caption>
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">USER</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">PSSWD</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr th:each="user:${users}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.email}"></td>
+            <td th:text="${user.password}"></td>
+        </tr>
+     
+    </tbody>
+</table>
