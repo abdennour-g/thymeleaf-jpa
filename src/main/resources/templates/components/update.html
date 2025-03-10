@@ -1,37 +1,30 @@
-<div class="div_form_add panel panel-primary col-xs-4">
-    <div class="panel-heading">update user</div>
-      <div class="panel-body">
-        <select name="update" class="sel_users col-xs-12 form-control" aria-label="Default select example" >
-         <option value=""></option>
-           <option 
-            th:each="u:${users}"
-            th:value="${u.id}"
-            th:text="${u.username}"
-           th:data-id="${u.id}"
-            th:data-username="${u.username}"
-            th:data-email="${u.email}"
-            th:data-password="${u.password}"
-            ></option>
-            
-      </select>
-    </div>
-       
-    <div class="panel-body">    	
-    	<form action="#" th:action="@{/save}" th:object="${user}" method="post">
-    	  <div class="form-group">
-                <label for="username">username</label>
-                <input type="hidden" class="id form-control" th:name="id"  />  
-                <input type="text" class="form-control" th:name="username" placeholder="Enter username" />
-            </div>
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="text" class="form-control" th:name="email" placeholder="Enter email" />
-            </div>
-            <div class="form-group">
-                <label for="password">password</label>
-                <input type="text" class="form-control" th:name="password" placeholder="Enter password" />
-            </div>
-    	<input type="submit" class="btn btn-primary" value="Valider" />
-    	</form>
-    </div>
+<div class="div_form_add panel panel-primary">
+  <div class="panel-heading">update user</div>
+  <div class="panel-body">
+    <select name="update" class="sel_users sel-update col-xs-12 form-control" aria-label="Default select example">
+      <option value=""></option>
+      <option th:each="u:${users}" th:value="${u.id}" th:text="${u.username}" th:data-id="${u.id}"
+        th:data-username="${u.username}" th:data-email="${u.email}" th:data-password="${u.password}"></option>
+
+    </select>
+  </div>
+
+  <div class="panel-body">
+    <form action="#" th:action="@{/save}" th:object="${user}" method="post">
+      <div class="form-group">
+        <label for="username">username</label>
+        <input type="hidden" class="id form-control update" th:name="id" />
+        <input type="text" class="form-control update" th:name="username" placeholder="Enter username" />
+      </div>
+      <div class="form-group">
+        <label for="email">email</label>
+        <input type="text" class="form-control update" th:name="email" placeholder="Enter email" />
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="text" class="form-control update" th:name="password" placeholder="Enter password" />
+      </div>
+      <input type="submit" class="btn btn-primary" value="Valider" />
+    </form>
+  </div>
 </div>

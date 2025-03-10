@@ -1,9 +1,9 @@
-<div class="div_form_add panel panel-primary col-xs-4">
+<div class="div_form_add panel panel-primary ">
     <div class="panel-heading">new user</div>
     <div class="panel-body">
-    	
-    	<form action="#" th:action="@{/save}" th:object="${user}" method="post">
-    	  <div class="form-group">
+
+        <form action="#" th:action="@{/save}" th:object="${user}" method="post">
+            <div class="form-group">
                 <label for="username">username</label>
                 <input type="text" class="form-control" th:name="username" placeholder="Enter username" />
             </div>
@@ -15,7 +15,7 @@
                 <label for="password">password</label>
                 <input type="text" class="form-control" th:name="password" placeholder="Enter password" />
             </div>
-    	<input type="submit" class="btn btn-primary" value="Valider" />
-    	</form>
+            <input type="submit" class="btn btn-primary" value="Valider" />
+        </form>
     </div>
 </div>

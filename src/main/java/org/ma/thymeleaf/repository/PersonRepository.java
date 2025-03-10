@@ -1,17 +1,13 @@
-package com.example.demo.dao;
+package org.ma.thymeleaf.repository;
 
-
-
-
+import org.ma.thymeleaf.entitie.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-import com.example.demo.ent.User;
+import java.util.UUID;
 
-
-@CrossOrigin("*")
 @RepositoryRestResource
-public interface UserRepository extends JpaRepository<User,Long> {
-    
+@CrossOrigin("*")
+public interface PersonRepository extends JpaRepository<Person, UUID> {
 }

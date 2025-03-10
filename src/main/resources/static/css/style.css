@@ -1,16 +1,24 @@
 @charset "UTF-8";
 body {
-	background: #dadafe;
+  background: #dadafe;
 }
 [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 .col-xs-4 {
-    margin-top: 17px;
-    margin-left: 5px;
-    width: 33%;
+  margin-top: 17px;
+  margin-left: 5px;
+  width: 33%;
 }
-.sel_users{
-	margin-bottom: 15px;
+.sel_users {
+  margin-bottom: 15px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.child {
+  width: 100%;
+  padding: 20px 10px;
 }
